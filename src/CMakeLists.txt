@@ -6,4 +6,4 @@ file(GLOB SRC_FILES "${CMAKE_CURRENT_SOURCE_DIR}/*.cpp" "${CMAKE_CURRENT_SOURCE_
 add_library(${SOLOUD_MA_LIB_NAME} STATIC ${SRC_FILES})
 
 target_compile_definitions(${SOLOUD_MA_LIB_NAME} PUBLIC -DWITH_MINIAUDIO)
-target_include_directories(${SOLOUD_MA_LIB_NAME} PUBLIC "${CMAKE_SOURCE_DIR}/include/SoLoud")
+target_include_directories(${SOLOUD_MA_LIB_NAME} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/../include/SoLoud")
